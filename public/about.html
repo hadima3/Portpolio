@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body data-page="About" data-subtitle="About">
+    <header class="nav" data-nav></header>
+
+    <main>
+      <section class="page-hero">
+        <div class="wrap reveal">
+          <span class="eyebrow">About</span>
+          <h1 class="section-title" id="aboutHeading">소개</h1>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top:0">
+        <div class="wrap">
+          <p class="about-body reveal" id="aboutBody"></p>
+          <div class="expertise reveal" id="expertise"></div>
+        </div>
+      </section>
+
+      <section class="section" id="sec-tools">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div><span class="eyebrow">Toolkit</span><h2 class="section-title" id="toolsHeading">스킬 &amp; 도구</h2></div>
+          </div>
+          <div class="tools-grid stagger" id="toolsList"></div>
+        </div>
+      </section>
+
+      <section class="section" id="sec-exp">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div><span class="eyebrow">Career</span><h2 class="section-title" id="experienceHeading">Experience</h2></div>
+          </div>
+          <div class="timeline" id="experienceList"></div>
+        </div>
+      </section>
+
+      <section class="section" id="sec-cred">
+        <div class="wrap">
+          <div class="about-grid">
+            <div id="sec-cert">
+              <div class="reveal"><span class="eyebrow">Certifications</span><h2 class="section-title" id="certHeading" style="font-size:clamp(1.6rem,3.5vw,2.2rem)">자격증</h2></div>
+              <div class="cred-list reveal" id="certList" style="margin-top:1.5rem"></div>
+            </div>
+            <div id="sec-lang">
+              <div class="reveal"><span class="eyebrow">Languages</span><h2 class="section-title" id="langHeading" style="font-size:clamp(1.6rem,3.5vw,2.2rem)">어학</h2></div>
+              <div class="cred-list reveal" id="langList" style="margin-top:1.5rem"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" data-footer></footer>
+
+    <script src="/js/common.js"></script>
+    <script src="/js/about.js"></script>
+  </body>
+</html>

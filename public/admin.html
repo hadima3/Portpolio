@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>관리자 · 포트폴리오 편집</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/admin.css" />
+  </head>
+  <body class="admin">
+    <!-- 로그인 -->
+    <div id="loginView" class="login">
+      <form id="loginForm" class="login__box">
+        <span class="eyebrow" style="justify-content:center">Admin</span>
+        <h1>관리자 로그인</h1>
+        <p class="login__hint">최초 비밀번호 <code>admin1234</code></p>
+        <input type="password" id="password" placeholder="비밀번호" autocomplete="current-password" />
+        <button type="submit" class="btn" style="justify-content:center">로그인</button>
+        <p id="loginError" class="error"></p>
+        <a href="/" class="login__back">← 사이트로 돌아가기</a>
+      </form>
+    </div>
+
+    <!-- 편집 앱 -->
+    <div id="app" hidden>
+      <header class="topbar">
+        <div class="topbar__bar">
+          <div class="topbar__left">
+            <span class="topbar__brand">Portfolio CMS</span>
+            <span class="topbar__status" id="saveStatus"></span>
+          </div>
+          <div class="topbar__actions">
+            <a href="/" target="_blank" class="tb-btn">사이트 보기 ↗</a>
+            <button id="logoutBtn" class="tb-btn">로그아웃</button>
+            <button id="saveBtn" class="tb-btn tb-btn--primary">저장하기</button>
+          </div>
+        </div>
+      </header>
+
+      <div class="layout">
+        <aside class="sidebar">
+          <nav id="sidebarNav" class="sidebar__nav"></nav>
+          <p class="sidebar__tip">💡 각 섹션·항목의 <b>공개</b> 스위치로<br />사이트에 보일 내용을 직접 고르세요.</p>
+        </aside>
+        <main class="panel" id="panel"></main>
+      </div>
+    </div>
+
+    <script src="/js/admin.js"></script>
+  </body>
+</html>

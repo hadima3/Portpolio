@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포트폴리오</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body data-page="Home">
+    <header class="nav" data-nav></header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="wrap">
+          <div class="hero__grid">
+            <div class="hero__text">
+              <span class="hero__name-en" id="heroNameEn"></span>
+              <h1 class="hero__name" id="heroName"></h1>
+              <p class="hero__role" id="heroRole"></p>
+              <div class="hero__tags" id="heroTags"></div>
+              <div class="hero__cta">
+                <a href="/projects" class="btn">프로젝트 보기 <span class="arrow">→</span></a>
+                <a href="/about" class="btn-ghost">더 알아보기</a>
+              </div>
+            </div>
+            <div class="hero__visual" id="heroVisual"></div>
+          </div>
+        </div>
+        <a href="#featured" class="hero__scroll">SCROLL</a>
+      </section>
+
+      <!-- FEATURED -->
+      <section class="section" id="featured">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <span class="eyebrow">Selected Work</span>
+              <h2 class="section-title">대표 프로젝트</h2>
+            </div>
+            <a href="/projects" class="btn-ghost">전체 보기 <span class="arrow">→</span></a>
+          </div>
+          <div class="works works--featured stagger" id="featured-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" data-footer></footer>
+
+    <script src="/js/common.js"></script>
+    <script src="/js/home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "자체 수정 가능한 포트폴리오 사이트 (순수 HTML/CSS/JS + Node 백엔드)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "MIT"
+}
